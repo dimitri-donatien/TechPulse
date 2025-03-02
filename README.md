@@ -1,15 +1,15 @@
 # 🚀 TechPulse - Veille intelligente Tech & Web Design  
 
-![CI/CD Workflow](https://github.com/ton-compte/techpulse/actions/workflows/ci-cd.yml/badge.svg)
+![CI/CD Workflow](https://github.com/dimitri-donatien/techpulse/actions/workflows/ci-cd.yml/badge.svg)
 ![Docker Image](https://img.shields.io/badge/Docker-GHCR-blue?logo=docker)
-![Docker Pulls](https://img.shields.io/docker/pulls/ton-compte/techpulse)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/ton-compte/techpulse)
-![GitHub last commit](https://img.shields.io/github/last-commit/ton-compte/techpulse)
-![GitHub issues](https://img.shields.io/github/issues/ton-compte/techpulse)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/ton-compte/techpulse)
-![GitHub license](https://img.shields.io/github/license/ton-compte/techpulse)
-![GitHub stars](https://img.shields.io/github/stars/ton-compte/techpulse?style=social)
-![GitHub top language](https://img.shields.io/github/languages/top/ton-compte/techpulse)
+![Docker Pulls](https://img.shields.io/docker/pulls/dimitri-donatien/techpulse)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/dimitri-donatien/techpulse)
+![GitHub last commit](https://img.shields.io/github/last-commit/dimitri-donatien/techpulse)
+![GitHub issues](https://img.shields.io/github/issues/dimitri-donatien/techpulse)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/dimitri-donatien/techpulse)
+![GitHub license](https://img.shields.io/github/license/dimitri-donatien/techpulse)
+![GitHub stars](https://img.shields.io/github/stars/dimitri-donatien/techpulse?style=social)
+![GitHub top language](https://img.shields.io/github/languages/top/dimitri-donatien/techpulse)
 
 **TechPulse** est un assistant **IA open-source** qui automatise la **veille technologique et web design**.  
 Il récupère, filtre et résume les tendances Tech & Web Design en utilisant **CrewAI + Ollama**, puis les notifie via **Discord, Email et Notion**.  
@@ -52,7 +52,7 @@ Il récupère, filtre et résume les tendances Tech & Web Design en utilisant **
 ### 2️⃣ Cloner le projet
 
 ```sh
-git clone https://github.com/ton-compte/techpulse.git
+git clone https://github.com/dimitri-donatien/techpulse.git
 cd techpulse
 ```
 
@@ -123,51 +123,6 @@ Ajoute un fichier .github/workflows/schedule.yml pour planifier l’exécution a
 
 ---
 
-📜 Contribution
-
-🚀 Envie d’améliorer TechPulse ?
-
-Forke le projet et propose des Pull Requests ! 🙌
-
-🌱 Comment contribuer ?
-
-Forker & Cloner le projet :
-
-```sh
-git clone https://github.com/votre-utilisateur/techpulse.git
-cd techpulse
-```
-
-Créer une branche :
-
-```sh
-git checkout -b feature-nouvelle-fonction
-```
-
-Faire vos modifications et tester :
-
-```sh
-python main.py
-```
-
-Commit & Push :
-
-```sh
-git add .
-git commit -m "Ajout de la fonctionnalité X"
-git push origin feature-nouvelle-fonction
-```
-
-Ouvrir une Pull Request (PR) sur GitHub.
-
-📌 Idées d’améliorations :
-
-Ajouter un dashboard Web (Next.js)
-Améliorer la pertinence AI (fine-tuning d’un modèle local)
-Détection avancée des tendances Twitter / Reddit
-
----
-
 📝 License
 
 🔓 TechPulse est sous licence MIT – Utilisation et modifications libres.
@@ -177,4 +132,4 @@ Détection avancée des tendances Twitter / Reddit
 💬 Contact
 
 💻 Développé avec ❤️ par @tonpseudo
-📧 Contact : tonemail@gmail.com
+📧 Contact : <tonemail@gmail.com>
