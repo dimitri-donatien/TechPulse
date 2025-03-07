@@ -12,6 +12,6 @@ Merci de votre intérêt pour ce projet ! Voici comment contribuer efficacement.
 ## 🛠️ Mise en place du projet
 
 ```bash
-git clone https://github.com/votre-nom/techpulse.git
+git clone https://github.com/dimitri-donatien/techpulse.git
 cd techpulse
 pip install -r requirements.txt
