@@ -1,0 +1,34 @@
+fetch_news:
+  description: >
+    Collecte les dernières news tech à partir des sources prédéfinies
+  expected_output: >
+    Liste d'articles tech
+  agent: tech_agent
+
+fetch_design_news:
+  description: >
+    Collecte les dernières news web design à partir des sources prédéfinies
+  expected_output: >
+    Liste d'articles web design
+  agent: design_agent
+
+filter_tech_news:
+  description: >
+    Filtre et évalue la pertinence des articles tech en fonction de mots-clés
+  expected_output: >
+    Articles tech pertinents
+  agent: tech_filter_agent
+
+filter_design_news:
+  description: >
+    Filtre et évalue la pertinence des articles web design en fonction de mots-clés
+  expected_output: >
+    Articles web design pertinents
+  agent: design_filter_agent
+
+summarize_news:
+  description: >
+    Synthétise les articles filtrés en un résumé concis
+  expected_output: >
+    Résumé consis des articles
+  agent: summary_agent
