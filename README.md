@@ -73,15 +73,17 @@ techpulse/
 
 ## Les fichiers essentiels
 
-| File          | Purpose                                         |
-|---------------|-------------------------------------------------|
-| agents.yaml   | Define your AI agents and their roles           |
-| tasks.yaml    | Set up agent tasks and workflows                |
-| .env          | Store API keys and environment variables        |
-| main.py       | Project entry point and execution flow          |
-| crew.py       | Crew orchestration and coordination             |
-| tools/        | Directory for custom agent tools                |
-| knowledge/    | Directory for knowledge base and data storage   |
+| Fichier       | Utilité                                           |
+|---------------|---------------------------------------------------|
+| agents.yaml   | Définir vos agents IA et leurs rôles              |
+| tasks.yaml    | Configurer les tâches et workflows des agents     |
+| .env          | Stocker les clés API et les variables d'environnement |
+| main.py       | Point d'entrée du projet et flux d'exécution      |
+| crew.py       | Orchestration et coordination de l'équipe         |
+| tools/        | Répertoire pour les outils d'agents personnalisés |
+| knowledge/    | Répertoire pour la base de connaissances et le stockage des données |
+
+---
 
 Pour plus d'information sur la configuration des fichiers, consultez la documentation [ici](https://docs.crewai.com/introduction).
 
