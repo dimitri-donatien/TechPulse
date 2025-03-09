@@ -17,17 +17,6 @@ Il récupère, filtre et résume les tendances Tech & Web Design en utilisant **
 
 ---
 
-## 📌 Fonctionnalités
-
-✅ **Scraping intelligent** : Récupère des articles depuis **Hacker News, Dev.to, Awwwards, Smashing Magazine…**  
-✅ **Filtrage AI** : Classe les articles avec **Ollama (Mistral)** selon tes **intérêts (DevOps, IA, Web Design, etc.)**  
-✅ **Détection de tendances** : Analyse la popularité des articles via **Twitter & Reddit**  
-✅ **Synthèse automatique** : Résume les meilleurs articles avec **un LLM local**  
-✅ **Notifications** : Envoie un **email HTML, un message Discord formaté et archive les tendances sur Notion / Supabase**  
-✅ **Automatisation** : Fonctionne en **tâche planifiée (Cron / GitHub Actions)**  
-
----
-
 ## 📸 Aperçu
 
 📩 **Exemple d’email généré**  
@@ -38,34 +27,96 @@ Il récupère, filtre et résume les tendances Tech & Web Design en utilisant **
 
 ---
 
+## 📌 Fonctionnalités
+
+✅ **Scraping intelligent** : Récupère des articles depuis **Hacker News, Dev.to, Awwwards, Smashing Magazine…**  
+✅ **Filtrage AI** : Classe les articles avec **Ollama (Mistral)** selon tes **intérêts (DevOps, IA, Web Design, etc.)**  
+❌ **Détection de tendances** : Analyse la popularité des articles via **Twitter & Reddit**  
+❌ **Synthèse automatique** : Résume les meilleurs articles avec **un LLM local**  
+❌ **Notifications** : Envoie un **email HTML, un message Discord formaté et archive les tendances sur Notion / Supabase**  
+❌ **Automatisation** : Fonctionne en **tâche planifiée (Cron / GitHub Actions)**  
+
+---
+
+## 📦 Technologies
+
+- **Python** : Langage de programmation principal
+- **Ollama (Mistral)** : IA pour le filtrage des articles ([Guide](https://ollama.ai/))
+- **Discord Webhook** : Envoi de notifications ([Guide](https://discord.com/developers/docs/intro))
+- **Notion API** : Stockage des tendances (In Progress) (facultatif)
+- **Supabase** : Stockage des tendances (In Progress) (facultatif)
+- **Docker** : Conteneurisation de l’application (In Progress) (facultatif)
+
+---
+
+## Achitecture dossier
+
+```sh
+techpulse/
+├── .gitignore
+├── knowledge/
+├── pyproject.toml
+├── README.md
+├── .env
+└── src/
+    └── techpulse/
+        ├── __init__.py
+        ├── main.py
+        ├── crew.py
+        ├── tools/
+        │   ├── custom_tool.py
+        │   └── __init__.py
+        └── config/
+            ├── agents.yaml
+            └── tasks.yaml
+```
+
+## Les fichiers essentiels
+
+| File          | Purpose                                         |
+|---------------|-------------------------------------------------|
+| agents.yaml   | Define your AI agents and their roles           |
+| tasks.yaml    | Set up agent tasks and workflows                |
+| .env          | Store API keys and environment variables        |
+| main.py       | Project entry point and execution flow          |
+| crew.py       | Crew orchestration and coordination             |
+| tools/        | Directory for custom agent tools                |
+| knowledge/    | Directory for knowledge base and data storage   |
+
+Pour plus d'information sur la configuration des fichiers, consultez la documentation [ici](https://docs.crewai.com/introduction).
+
+---
+
+> Commencez par éditer `agents.yaml` et `tasks.yaml` pour définir le comportement de votre équipe d’IA.
+
+---
+
+> Conservez les informations sensibles comme les clés API dans .env.
+
+---
+
 ## 🚀 Installation & Configuration
 
-### 1️⃣ Prérequis
-
-- **Python 3.10+**
-- **Ollama (Mistral) installé localement** ([Guide](https://ollama.ai/))
-- **Créer un bot Discord & Webhook** ([Guide](https://discord.com/developers/docs/intro))
-- **Un compte Notion API / Supabase** (facultatif)
-- **Docker & Docker Compose** (facultatif)
-
-### 2️⃣ Cloner le projet
+### 1️⃣ Cloner le projet
 
 ```sh
 git clone https://github.com/dimitri-donatien/techpulse.git
 cd techpulse
 ```
 
-3️⃣ Installer les dépendances
+### 2️⃣ Installer les dépendances
 
 ```sh
-pip install -r requirements.txt
+crewai install
 ```
 
-4️⃣ Configurer les variables d’environnement
+### 3️⃣ Configurer les variables d’environnement
 
 Crée un fichier .env et ajoute :
 
 ```sh
+MODEL=ollama/Nom_Model
+API_BASE=****************
 DISCORD_WEBHOOK_URL=ton_webhook_discord
 SMTP_EMAIL=ton_email@gmail.com
 SMTP_PASSWORD=ton_mot_de_passe_application
@@ -75,15 +126,21 @@ SUPABASE_URL=https://xyzcompany.supabase.co
 SUPABASE_KEY=ta_cle_supabase
 ```
 
-5️⃣ Lancer le script
+### 4️⃣ Lancer le script
 
 ```sh
-python main.py
+crewai run
+```
+
+### 5️⃣ Installer des packages supplémentaires
+
+```sh
+uv add <package-name>
 ```
 
 ---
 
-🕰️ Automatisation
+## 🕰️ Automatisation
 
 Exécuter tous les jours avec un Cron Job
 Ajoute cette ligne dans ton crontab -e :
@@ -100,13 +157,14 @@ Ajoute un fichier .github/workflows/schedule.yml pour planifier l’exécution a
 
 ---
 
-📝 License
+## 📝 License
 
 🔓 TechPulse est sous licence MIT – Utilisation et modifications libres.
 
 ---
 
-💬 Contact
+## 💬 Contact
 
-💻 Développé avec ❤️ par @dimitri-donatien
+💻 Développé avec ❤️ par [@dimitri-donatien](https://github.com/dimitri-donatien)
+
 📧 Contact : <donatien.dim@gmail.com>
