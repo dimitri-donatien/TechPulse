@@ -32,7 +32,7 @@ Il récupère, filtre et résume les tendances Tech & Web Design en utilisant **
 ✅ **Scraping intelligent** : Récupère des articles depuis **Hacker News, Dev.to, Awwwards, Smashing Magazine…**  
 ✅ **Filtrage AI** : Classe les articles avec **Ollama (Mistral)** selon tes **intérêts (DevOps, IA, Web Design, etc.)**  
 ❌ **Détection de tendances** : Analyse la popularité des articles via **Twitter & Reddit**  
-❌ **Synthèse automatique** : Résume les meilleurs articles avec **un LLM local**  
+✅ **Synthèse automatique** : Résume les meilleurs articles avec **un LLM local**  
 ❌ **Notifications** : Envoie un **email HTML, un message Discord formaté et archive les tendances sur Notion / Supabase**  
 ❌ **Automatisation** : Fonctionne en **tâche planifiée (Cron / GitHub Actions)**  
 
