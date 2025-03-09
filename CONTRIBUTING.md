@@ -14,4 +14,5 @@ Merci de votre intérêt pour ce projet ! Voici comment contribuer efficacement.
 ```bash
 git clone https://github.com/dimitri-donatien/techpulse.git
 cd techpulse
-pip install -r requirements.txt
+crewai install
+```
